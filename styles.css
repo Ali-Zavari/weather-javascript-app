@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(240, 236, 236);
+    color: black;
+    letter-spacing: 0.2rem;
+    font-size: 0.8em;
+}
+.container{
+    max-width: 400px;
+    max-height: 300px;
+}
+.icon img{
+    height: 100px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+    width: 100%;
+    border-radius: 50%;
+}
+.time{
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+}
