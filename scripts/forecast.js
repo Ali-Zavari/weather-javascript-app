@@ -10,7 +10,7 @@ const key = '3bc958a12c48408d980175227221103';
 
 // get weather async
 const getWeather = async(city)=>{
-    const base = 'http://api.weatherapi.com/v1/';
+    const base = 'https://api.weatherapi.com/v1/';
     const query = `current.json?key=${key}&q=${city}&aqi=no`;
 
     const response = await fetch(base + query);
