@@ -43,6 +43,6 @@ const myLocation =async ()=> {
     const javab = await fetch('http://api.ipapi.com/37.156.63.29?access_key=ba657bce83abb484703636406c80779e&format=1');
     const javab2 = await javab.json();
     // console.log(javab2)
-    getWeather(javab2["city"]?javab2["city"]:"tehran");
+    getWeather(javab2["city"]||"tehran");
 }
 myLocation();
