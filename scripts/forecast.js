@@ -42,6 +42,6 @@ form.addEventListener('submit',(e)=>{
 const myLocation =async ()=> {
     const javab = await fetch('https://api.db-ip.com/v2/free/self');
     const javab2 = await javab.json();
-    getWeather(javab2["city"]);
+    getWeather(javab2["city"]?javab2["city"]:"tehran");
 }
 myLocation();
